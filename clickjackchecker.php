@@ -1,6 +1,15 @@
 <?php
-$page = $_POST["value"];
-echo $page;
+if (isset($_POST["value"]))
+	{
+		$page = $_POST["value"];
+		echo $page;
+	}
+	
+	else 
+	{
+		$page = null;
+		echo "please enter url and click submit";
+	}
 ?>
 
 <h1>Click Jack Checker</h1>
